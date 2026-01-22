@@ -1,26 +1,30 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "cppbuild",
-			"label": "Build with GCC 14.2.0",
-			"command": "C:\\mingw64\\bin\\g++.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"-std=c++26",
-				"${file}",
-				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build",
-			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build StudentRecordsManager",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++26",
+                "-I${workspaceFolder}\\include",
+                "${workspaceFolder}\\src\\main.cpp",
+                "${workspaceFolder}\\src\\Student.cpp",
+                "${workspaceFolder}\\src\\RecordManager.cpp",
+                "${workspaceFolder}\\src\\Utils.cpp",
+                "-o",
+                "${workspaceFolder}\\bin\\main.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Compiler: C:\\mingw64\\bin\\g++.exe"
+        }
+    ]
 }
