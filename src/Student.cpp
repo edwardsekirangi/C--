@@ -2,11 +2,13 @@
 
 namespace records {
 
+    //We create the student 
     Student::Student(int id, std::string name, int year)
     : id_(id), name_(std::move(name)), year_(year){
         std::cout << "[Student] Created: " << name_ << "\n";
     }
-
+    
+    //The student is destroyed 
     Student::~Student() {
         std::cout << "[Student] Destroyed: " << name_ << "\n";
     }

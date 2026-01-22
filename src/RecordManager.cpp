@@ -1,5 +1,6 @@
 #include "RecordManager.h"
 
+//Assigning our students to memory the returned value we will store in our vector in the RecordManager.h
 namespace records {
     void RecordManager::addStudent(int id, const std::string& name, int year) {
         students_.push_back(std::make_unique<Student>(id, name, year));

@@ -10,6 +10,8 @@ int main() {
     // Ask the user how many students they want to add
     int count = readInt("How many students do you want to add? ");
 
+
+    //For loop will loop according to the number of students we added
     for (int i = 0; i < count; ++i) {
         std::cout << "\n--- Student " << (i + 1) << " ---\n";
 

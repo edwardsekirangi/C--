@@ -4,6 +4,7 @@
 
 namespace records {
 
+//Quality checking and inspection of inputs
 int readInt(const std::string& prompt) {
     int value;
     while (true) {
